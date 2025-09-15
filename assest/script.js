@@ -35,7 +35,7 @@ window.addEventListener('scroll', () => {
 // Accordion functionality for Professional Experience
 const accordions = document.querySelectorAll('.accordion-header');
 accordions.forEach(header => {
-  header.addEventListener('click', function() {
+  header.addEventListener('click', function () {
     const isActive = this.classList.contains('active');
     // Close all
     accordions.forEach(h => {

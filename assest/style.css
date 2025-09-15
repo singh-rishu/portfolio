@@ -182,7 +182,7 @@ nav a.active::after {
 
 /* Sections */
 section {
-    padding: 1rem 0 3rem;
+    padding: 3rem 2rem;
     border-bottom: 1px solid #222;
     opacity: 0;
     transform: translateY(40px);
@@ -575,7 +575,7 @@ section {
     }
 
     section {
-        padding: 10px 20px;
+        padding: 20px;
     }
 
     .hero h2 {
@@ -633,95 +633,110 @@ section {
 
 /* Accordion Styles */
 .accordion-group {
-  max-width: 900px;
-  margin: 0 auto;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px #00d8ff22, 0 1.5px 8px #0008;
-  background: #181c24;
-  overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #00d8ff22, 0 1.5px 8px #0008;
+    background: #181c24;
+    overflow: hidden;
 }
-.accordion-item + .accordion-item {
-  border-top: 1px solid #23263a;
+
+.accordion-item+.accordion-item {
+    border-top: 1px solid #23263a;
 }
+
 .accordion-header {
-  width: 100%;
-  text-align: left;
-  background: none;
-  border: none;
-  outline: none;
-  font-size: 1.18rem;
-  font-weight: 700;
-  color: #00d8ff;
-  padding: 1.3rem 2.2rem 1.3rem 1.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: background 0.2s;
-  border-left: 6px solid transparent;
-  position: relative;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: #00d8ff;
+    padding: 1.3rem 2.2rem 1.3rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.2s;
+    border-left: 6px solid transparent;
+    position: relative;
 }
+
 .accordion-header.active,
 .accordion-header:focus {
-  background: linear-gradient(90deg, #181c24 80%, #00d8ff22 100%);
-  border-left: 6px solid #00d8ff;
+    background: linear-gradient(90deg, #181c24 80%, #00d8ff22 100%);
+    border-left: 6px solid #00d8ff;
 }
+
 .accordion-role {
-  font-size: 0.78rem;
-  color: #ffb300;
-  font-weight: 500;
- margin-left: auto;
-}
-.accordion-body {
-  background: #20222e;
-  padding: 1.4rem 2.2rem;
-  color: #bbb;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  display: none;
-  animation: fadeInUp 0.5s;
-}
-.accordion-body ul {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-.accordion-body li {
-  margin-bottom: 0.6rem;
-}
-.accordion-header .chevron {
-  margin-left: 1.2rem;
-  font-size: 1.2em;
-  color: #ffb300;
-  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
-  display: inline-block;
-}
-.accordion-header .chevron.rotate {
-  transform: rotate(90deg);
-}
-.accordion-role.desktop-role {
-  display: inline;
-}
-.accordion-role.mobile-role {
-  display: none;
-}
-@media (max-width: 600px) {
-  .accordion-role.desktop-role {
-    display: none;
-  }
-  .accordion-role.mobile-role {
-    display: block;
+    font-size: 0.88rem;
     color: #ffb300;
-    font-size: 0.98rem;
     font-weight: 500;
-    margin-bottom: 0.7rem;
-    margin-top: 1.5rem;
-  }
-  .accordion-header {
-    font-size: 1rem;
-    padding: 1rem 1rem 1rem 0.7rem;
-  }
-  .accordion-body {
-    padding: 0 1rem 1rem 1.2rem;
-    font-size: 0.98rem;
-  }
+    margin-left: auto;
+}
+
+.accordion-body {
+    background: #20222e;
+    padding: 1.4rem 2.2rem;
+    color: #bbb;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    display: none;
+    animation: fadeInUp 0.5s;
+}
+
+.accordion-body ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.accordion-body li {
+    margin-bottom: 0.6rem;
+}
+
+.accordion-header .chevron {
+    margin-left: 1.2rem;
+    font-size: 1.2em;
+    color: #ffb300;
+    transition: transform 0.3s cubic-bezier(.4, 0, .2, 1);
+    display: inline-block;
+}
+
+.accordion-header .chevron.rotate {
+    transform: rotate(90deg);
+}
+
+.accordion-role.desktop-role {
+    display: inline;
+}
+
+.accordion-role.mobile-role {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .accordion-role.desktop-role {
+        display: none;
+    }
+
+    .accordion-role.mobile-role {
+        display: block;
+        color: #ffb300;
+        font-size: 0.98rem;
+        font-weight: 500;
+        margin-bottom: 0.7rem;
+        padding-top: 1.5rem;
+    }
+
+    .accordion-header {
+        font-size: 1rem;
+        padding: 1rem 1rem 1rem 0.7rem;
+    }
+
+    .accordion-body {
+        padding: 1rem;
+        font-size: 0.98rem;
+    }
 }
