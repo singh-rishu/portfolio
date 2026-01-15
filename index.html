@@ -11,9 +11,15 @@
 <body>
 
     <header class="container" id="header">
-        <h1>Rishabh Singh</h1>
+        <div class="profile">
+            <img src="./assest/img/profile.jpg" alt="Rishabh Singh" width="90" height="90" />
+            <div class="profile-info">
+                <h1>Rishabh Singh</h1>
+                <p>Full-Stack Web Developer & Automation Engineer</p>
+            </div>
+        </div>
         <nav>
-            <a href="#about">About</a>
+            <a href="#about" class="active">About</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
@@ -21,10 +27,10 @@
         </nav>
     </header>
 
-    <section id="hero">
-        <h2>Building <span class="highlight">Web Applications</span> & <span class="highlight">Automation Tools</span></h2>
+    <section class="hero">
+        <h2>Building <span class="highlight">Web Applications</span> &amp; <span class="highlight">Automation Tools</span></h2>
         <p>From automation engineering to full‑stack development — creating scalable, AI-powered solutions that make work easier.</p>
-        <a href="#contact">Let's Connect</a>
+        <a href="#contact" class="btn-primary">Let's Connect</a>
     </section>
 
     <section id="about">
@@ -57,15 +63,23 @@
         </div>
     </section>
 
+    <section id="certifications">
+        <h3>Certifications</h3>
+        <div class="skills-list">
+            <div class="skill-item">Linux Redhat System Administration</div>
+            <div class="skill-item">Shell Scripting</div>
+            <div class="skill-item">Grafana</div>
+            <div class="skill-item">Jenkins</div>
+            <div class="skill-item">Web Development</div>
+            <div class="skill-item">HTML5/CSS3</div>
+        </div>
+    </section>
+
     <section id="experience">
         <h3>Professional Experience</h3>
         <div class="accordion-group">
-
             <div class="accordion-item">
-                <button class="accordion-header active">Amdocs Technologies 
-                    <span class="accordion-role desktop-role">Web Developer & Automation Engineer (Jul 2023 - Present)</span>
-                    <span class="chevron rotate">&#9654;</span>
-                </button>
+                <button class="accordion-header active">Amdocs Technologies <span class="accordion-role desktop-role">Web Developer & Automation Engineer (Jul 2023 - Present)</span><span class="chevron rotate">&#9654;</span></button>
                 <div class="accordion-body" style="display:block;">
                     <span class="accordion-role mobile-role">Web Developer & Automation Engineer (Jul 2023 - Present)</span>
                     <ul>
@@ -76,12 +90,8 @@
                     </ul>
                 </div>
             </div>
-
             <div class="accordion-item">
-                <button class="accordion-header">Aircom International
-                    <span class="accordion-role desktop-role">L2 Application Support & Automation Engineer (Jan 2023 - Jun 2023)</span>
-                    <span class="chevron">&#9654;</span>
-                </button>
+                <button class="accordion-header">Aircom International <span class="accordion-role desktop-role">L2 Application Support & Automation Engineer (Jan 2023 - Jun 2023)</span><span class="chevron">&#9654;</span></button>
                 <div class="accordion-body">
                     <span class="accordion-role mobile-role">L2 Application Support & Automation Engineer (Jan 2023 - Jun 2023)</span>
                     <ul>
@@ -91,12 +101,8 @@
                     </ul>
                 </div>
             </div>
-
             <div class="accordion-item">
-                <button class="accordion-header">Teoco Software
-                    <span class="accordion-role desktop-role">L1 Application Support Engineer (Oct 2021 - Dec 2022)</span>
-                    <span class="chevron">&#9654;</span>
-                </button>
+                <button class="accordion-header">Teoco Software <span class="accordion-role desktop-role">L1 Application Support Engineer (Oct 2021 - Dec 2022)</span><span class="chevron">&#9654;</span></button>
                 <div class="accordion-body">
                     <span class="accordion-role mobile-role">Application Support Engineer (L1) (Oct 2021 - Dec 2022)</span>
                     <ul>
@@ -106,59 +112,65 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section id="education">
+        <h3>Education</h3>
+        <div class="cards-grid">
+            <article class="card">
+                <h4>BCA</h4>
+                <span class="date">2015 - 2018</span>
+                <p>Dr. RMLA University, Faizabad, UP</p>
+            </article>
+            <article class="card">
+                <h4>HSC (12th)</h4>
+                <span class="date">2013 - 2015</span>
+                <p>Pioneer Inter College, UP</p>
+            </article>
+            <article class="card">
+                <h4>SSC (10th)</h4>
+                <span class="date">2011 - 2013</span>
+                <p>Anupam Inter College, UP</p>
+            </article>
         </div>
     </section>
 
     <section id="projects">
         <h3>Projects & Tools</h3>
         <div class="cards-grid">
-
             <article class="project-card">
                 <div class="project-card-header">
                     <span class="project-card-icon">🤖</span>
                     <span class="project-card-title">AImiGo</span>
                 </div>
                 <div class="project-card-tech">Python, Django, PostgreSQL, JavaScript</div>
-                <div class="project-card-desc">
-                    AI-powered workflow automation platform for document intelligence, case management, and support automation. 
-                    Includes chatbot interface, RCA generator, analytics dashboards, and real-time monitoring integration.
-                </div>
+                <div class="project-card-desc">AI-powered workflow automation platform for document intelligence, case management, and support automation. Includes chatbot interface, RCA generator, analytics dashboards, and real-time monitoring integration.</div>
             </article>
-
             <article class="project-card">
                 <div class="project-card-header">
                     <span class="project-card-icon">📊</span>
                     <span class="project-card-title">Helix Guard</span>
                 </div>
                 <div class="project-card-tech">Flask, InfluxDB, Grafana, JS</div>
-                <div class="project-card-desc">
-                    Real-time monitoring dashboard with system metrics, alerts, performance graphs, and log insights for proactive issue detection.
-                </div>
+                <div class="project-card-desc">Real-time monitoring dashboard with system metrics, alerts, performance graphs, and log insights for proactive issue detection.</div>
             </article>
-
             <article class="project-card">
                 <div class="project-card-header">
                     <span class="project-card-icon">💬</span>
                     <span class="project-card-title">GeniX Chatbot</span>
                 </div>
                 <div class="project-card-tech">Flask, Python, AWS Lambda</div>
-                <div class="project-card-desc">
-                    AI-powered chatbot for internal support tasks with authentication, knowledge-base integration, and voice input support.
-                </div>
+                <div class="project-card-desc">AI-powered chatbot for internal support tasks with authentication, knowledge-base integration, and voice input support.</div>
             </article>
-
             <article class="project-card">
                 <div class="project-card-header">
                     <span class="project-card-icon">⚡</span>
                     <span class="project-card-title">PyShell Toolkit</span>
                 </div>
                 <div class="project-card-tech">Python, Shell</div>
-                <div class="project-card-desc">
-                    Hybrid automation toolkit for alert analysis, log parsing, and automated remediation workflows.
-                </div>
+                <div class="project-card-desc">Hybrid automation toolkit for alert analysis, log parsing, and automated remediation workflows.</div>
             </article>
-
         </div>
     </section>
 
@@ -167,19 +179,21 @@
         <ul class="contact-info">
             <li><strong>Location:</strong> Sector 13, Gurgaon, Haryana-122001, India</li>
             <li><strong>Phone:</strong> +91 9648399629</li>
-            <li><strong>Email:</strong> <a href="mailto:singham914124@gmail.com">singham914124@gmail.com</a></li>
+            <li><strong>Email:</strong> <a href="mailto:singham914124@gmail.com" style="color:#00d8ff;">singham914124@gmail.com</a></li>
             <li><strong>Languages:</strong> English, Hindi</li>
         </ul>
-        <a href="mailto:singham914124@gmail.com">Email Me</a>
+        <a href="mailto:singham914124@gmail.com" class="btn-contact">Email Me</a>
     </section>
 
     <footer>
         <div class="footer-social-row">
-            <a href="https://www.linkedin.com/in/-rishabh-singh" target="_blank">LinkedIn</a>
-            <a href="https://github.com/singh-rishu" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/-rishabh-singh" target="_blank" title="LinkedIn"><img src="./assest/img/linkedin.png" alt="LinkedIn" class="footer-icon"></a>
+            <a href="https://github.com/singh-rishu" target="_blank" title="GitHub"><img src="./assest/img/social.png" alt="GitHub" class="footer-icon"></a>
         </div>
         <div class="footer-copy">&copy; 2025 Rishabh Singh</div>
     </footer>
+
+    <script src="./assest/script.js"></script>
 
 </body>
 
