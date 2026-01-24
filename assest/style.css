@@ -220,6 +220,11 @@ section h3 {
     white-space: pre-line;
 }
 
+.card-container {
+    max-width: 920px; 
+    margin: 0 auto;
+}
+
 /* Skills */
 .skills-list {
     display: flex;
@@ -739,4 +744,5 @@ section {
         padding: 1rem;
         font-size: 0.98rem;
     }
+
 }
