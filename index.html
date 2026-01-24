@@ -154,51 +154,84 @@
         </div>
     </section>
 
-    <section id="projects">
-        <h3>Projects & Tools</h3>
-        <div class="">
-            <article class="project-card">
-                <div class="project-card-header">
-                    <span class="project-card-icon">🤖</span>
-                    <span class="project-card-title">AImiGo</span>
-                </div>
-                <div class="project-card-tech">Python, Django, PostgreSQL, JavaScript, Azure SSO, LLM API</div>
-                <div class="project-card-desc">
-                    AI-powered workflow automation platform integrating emails, tickets, documents, and AI responses. Features include Email Analyzer, CaseIQ, Mailbox, MailOps, DocStream, ChatAmy chatbot, RBAC system, and admin activity dashboard.
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-card-header">
-                    <span class="project-card-icon">💬</span>
-                    <span class="project-card-title">Genix Chatbot</span>
-                </div>
-                <div class="project-card-tech">Python, Flask, JavaScript, MongoDB, MariaDB, AWS EC2</div>
-                <div class="project-card-desc">
-                    AI chatbot with authentication, session management, Gemini API integration, and full chat history management. Users can upload files, select LLM models, and interact with internal documentation.
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-card-header">
-                    <span class="project-card-icon">📊</span>
-                    <span class="project-card-title">Helix Guard</span>
-                </div>
-                <div class="project-card-tech">Python, Grafana, InfluxDB, Telegraf, JS</div>
-                <div class="project-card-desc">
-                    Automated monitoring dashboard for system and server metrics. Connects to InfluxDB, visualizes metrics in Grafana, and sends automated reports via email.
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-card-header">
-                    <span class="project-card-icon">⚡</span>
-                    <span class="project-card-title">AT Toolkit</span>
-                </div>
-                <div class="project-card-tech">Shell Scripting, Python</div>
-                <div class="project-card-desc">
-                    Collection of automated scripts for troubleshooting Helix product and server issues, reducing repetitive task time from 20 minutes to under 20 seconds.
-                </div>
-            </article>
-        </div>
-    </section>
+<section id="projects">
+    <h3>Projects & Tools</h3>
+    <div class="card-container">
+        <article class="project-card">
+            <div class="project-card-header">
+                <span class="project-card-icon">🤖</span>
+                <span class="project-card-title">AImiGo</span>
+            </div>
+            <div class="project-card-tech">Python, Django, Django REST Framework, PostgreSQL, JavaScript, jQuery, Bootstrap, Azure SSO, MS Graph API, LLM API</div>
+            <div class="project-card-desc">
+                AI-driven full-stack workflow automation platform designed for support engineers and internal teams. Centralizes emails, tickets, documents, and AI responses in a single tool.  
+                <ul>
+                    <li><strong>Email Analyzer:</strong> Summarizes unread emails into concise lines using LLM, reducing manual email review.</li>
+                    <li><strong>CaseIQ:</strong> AI-assisted ticket analysis and response generation with document group selection and multiple prompt templates.</li>
+                    <li><strong>Mailbox & MailOps:</strong> Manage personal and shared mailbox alerts with automated categorization and AI-generated troubleshooting steps.</li>
+                    <li><strong>DocStream:</strong> Access and summarize SharePoint/OneDrive documents directly through the platform.</li>
+                    <li><strong>ChatAmy Chatbot:</strong> Fully-featured AI chatbot connected to internal docs, Jira, and Confluence. Supports LLM model selection, file uploads, and custom prompts.</li>
+                    <li><strong>RBAC & Admin Dashboard:</strong> Role-based access control, user activity tracking, and feature access audit.</li>
+                    <li><strong>Additional Features:</strong> SmartCalendar, Roaster360, QuickPass for scheduling and handover tasks.</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-card-header">
+                <span class="project-card-icon">💬</span>
+                <span class="project-card-title">Genix Chatbot</span>
+            </div>
+            <div class="project-card-tech">Python, Flask, JavaScript, Bootstrap, MongoDB, MariaDB, AWS EC2, Gemini API</div>
+            <div class="project-card-desc">
+                AI-powered chatbot application for internal support queries.  
+                <ul>
+                    <li>User authentication, session management, and role-based access.</li>
+                    <li>Integration with Gemini API for natural language processing and responses.</li>
+                    <li>Full chat history management in MongoDB; user and session data in MariaDB.</li>
+                    <li>Supports file uploads and allows users to select document groups for accurate AI responses.</li>
+                    <li>Deployed on AWS EC2 with Nginx for secure access and scalability.</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-card-header">
+                <span class="project-card-icon">📊</span>
+                <span class="project-card-title">Helix Guard</span>
+            </div>
+            <div class="project-card-tech">Python, Grafana, InfluxDB, Telegraf, JavaScript</div>
+            <div class="project-card-desc">
+                Automated monitoring and reporting tool for Helix systems and server metrics.  
+                <ul>
+                    <li>Connects to InfluxDB to fetch metrics and system performance data.</li>
+                    <li>Visualizes key metrics in Grafana dashboards for proactive monitoring.</li>
+                    <li>Generates automated email reports, eliminating manual VPN/portal access for monitoring.</li>
+                    <li>Reduces time and manual effort in daily monitoring tasks.</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-card-header">
+                <span class="project-card-icon">⚡</span>
+                <span class="project-card-title">PyShell Toolkit (Upgraded AT Tool)</span>
+            </div>
+            <div class="project-card-tech">Python, Shell Scripting</div>
+            <div class="project-card-desc">
+                Advanced automation toolkit for troubleshooting Helix product and server issues.  
+                <ul>
+                    <li>Upgrade of the previous AT Tool with Python scripts for faster execution and enhanced features.</li>
+                    <li>Contains 20+ scripts automating repetitive troubleshooting steps, reducing task time from 20 minutes to under 20 seconds.</li>
+                    <li>Automates process checks, remote server connections, log analysis, and file verifications.</li>
+                    <li>Deployed across multiple projects for global customers (US, Austria, Costa Rica, Bulgaria, South Africa, Spain, Israel).</li>
+                    <li>Enables engineers to troubleshoot alerts and system issues efficiently, with minimal manual intervention.</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</section>
+
 
     <section id="contact">
         <h3>Contact</h3>
@@ -224,3 +257,4 @@
 </body>
 
 </html>
+
