@@ -221,8 +221,10 @@ section h3 {
 }
 
 .card-container {
-    max-width: 920px; 
+    max-width: 900px;
     margin: 0 auto;
+    display: grid;
+    gap: 2rem;
 }
 
 /* Skills */
@@ -746,3 +748,4 @@ section {
     }
 
 }
+
